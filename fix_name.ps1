@@ -3,5 +3,5 @@
  
 param([string]$name = $(throw "Use the -name parameter to specify your project's name."))
 gci . -recurse | ForEach {
-  (Get-Content $_ | ForEach {$_ -replace "\{\{ project_name \}\}", $project_name}) | Set-Content $_ 
+  (Get-Content $_ | ForEach {$_ -replace "\{\{ project_name \}\}", $name}) | Set-Content $_ 
 }
