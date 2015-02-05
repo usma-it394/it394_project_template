@@ -10,7 +10,7 @@ django-admin startproject will correctly rename the project_name folder and also
 
 Unfortunately, it does not apply changes to the contents of files in the root directory of the project.  I've included a simple PowerShell script named "fix_name.ps1" that will replace the {{ project_name }} pattern in any files in the current working directory.  So after you start the project run
 ```
-cd "project name"
+cd <project name>
 .\fix_name.ps1 -name "project name"
 ```
 
