@@ -13,3 +13,11 @@ Unfortunately, it does not apply changes to the root directory of the project.  
 fix_name -name "project name"
 ```
 
+For example, if I wanted to start a new project named "nifty" I would enter the following:
+```
+django-admin startproject --template=http://github.com/usma-it394/it394_project_template/archive/master.zip nifty
+cd nifty
+.\fix_name.ps1 -name "nifty"
+```
+
+
