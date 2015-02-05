@@ -61,6 +61,8 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = '{{ project_name }}.urls'
 
+# WSGI configuration
+# See https://docs.djangoproject.com/en/{{ docs_version }}/howto/deployment/wsgi/
 WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
 
 # Database

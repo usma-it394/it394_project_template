@@ -20,5 +20,7 @@ django-admin startproject --template=http://github.com/usma-it394/it394_project_
 cd nifty
 .\fix_name.ps1 -name "nifty"
 ```
+# References
+The standard django-admin templates for projects and apps are at https://github.com/django/django/tree/master/django/conf
 
 
