@@ -93,6 +93,8 @@ USE_TZ = True
 
 # Static asset configuration for static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/{{ docs_version }}/howto/static-files/
+# dj-static configuration
+# See: https://github.com/kennethreitz/dj-static
 STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
 
