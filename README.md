@@ -15,6 +15,9 @@ To use this template start a new project using django-admin and the --template p
 ```
 django-admin startproject --template=http://github.com/usma-it394/it394_project_template/archive/master.zip <project name>
 ```
+
+You should use an all lower case name (with no special characters) for your project name.
+
 django-admin startproject will correctly rename the project_name folder and also replace the {{ }} patterns with the correct values for the contents of the files in the project_name folder.
 
 Unfortunately, it does not apply changes to the contents of files in the root directory of the project.  I've included a simple PowerShell script named "fix_name.ps1" that will replace the {{ project_name }} pattern in any files in the current working directory.  So after you start the project run
@@ -83,6 +86,17 @@ The firewall configuration also complicates the creation of the projects initial
 ```
 heroku run:detached bash ./create_admin.sh admin admin@example.com password
 ```
+
+# Misc
+
+## Reuse a Heroku Application Instance
+Instead of creating a new Heroku application with "heroku create", You can associate a new clone of a project with an existing Heroku application instance.  I could clone this repository then associate it with the heroku application "immense-scrubland-9864" (previosly made with "heroku create" on another computer) with the following command:
+```
+heroku git:remote –a immense-scrubland-9864
+```
+
+## Procfile
+Heroku uses the commands in the Procfile to run your application.  See https://devcenter.heroku.com/articles/procfile for additional information.
 
 # References
 The standard django-admin templates for projects and apps are at https://github.com/django/django/tree/master/django/conf
