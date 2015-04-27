@@ -1,5 +1,5 @@
 # it394_project_template
-A project template for a Python/Django project ready to deply into the Heroku production environment.
+A project template for a Python/Django project ready to deploy into the Heroku production environment.
 
 # How to use this template
 Start your DAD virtual environment.
